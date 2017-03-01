@@ -6,15 +6,14 @@
   "license": "Apache-2.0",
   "readmeFilename": "README.md",
   "author": {
-    "name": "Umed Khudoiberdiev",
-    "email": "pleerock.me@gmail.com"
+    "name": "Swanest"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/pleerock/class-sanitizer.git"
+    "url": "https://github.com/swanest/class-sanitizer.git"
   },
   "bugs": {
-    "url": "https://github.com/pleerock/class-sanitizer/issues"
+    "url": "https://github.com/swanest/class-sanitizer/issues"
   },
   "tags": [
     "sanitizer",
