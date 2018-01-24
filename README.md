@@ -1,21 +1,11 @@
-# class-sanitizer [![Build Status](https://travis-ci.org/hollowverse/class-sanitizer.svg?branch=master)](https://travis-ci.org/hollowverse/class-sanitizer)
+# `hollowverse/class-sanitizer` [![Build Status](https://travis-ci.org/hollowverse/class-sanitizer.svg?branch=master)](https://travis-ci.org/hollowverse/class-sanitizer)
 
 
 Allows to use decorator and non-decorator based sanitization in your Typescript classes.
 Internally uses [validator.js][1] to make sanitization.
 
 ## Installation
-
-1. Install module:
-
-    `npm install class-sanitizer --save`
-
-3. ES6 features are used, so you may want to install [es6-shim](https://github.com/paulmillr/es6-shim) too:
-
-    `npm install es6-shim --save`
-
-    if you are building nodejs app, you may want to `require("es6-shim");` in your app.
-    or if you are building web app, you man want to add `<script src="path-to-shim/es6-shim.js">` on your page.
+`npm install `@hollowverse/class-sanitizer` --save`
 
 ## Usage
 
