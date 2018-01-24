@@ -1,20 +1,18 @@
 {
-    "version": "1.8.0",
-    "compilerOptions": {
-        "outDir": "build/compiled",
-        "target": "es5",
-        "module": "commonjs",
-        "moduleResolution": "node",
-        "emitDecoratorMetadata": true,
-        "experimentalDecorators": true,
-        "sourceMap": true,
-        "noImplicitAny": true,
-        "declaration": true
-    },
-    "exclude": [
-        "build",
-        "node_modules",
-        "typings/browser.d.ts",
-        "typings/browser"
-    ]
+  "extends": "./node_modules/@hollowverse/common/tsconfig.json",
+  "compilerOptions": {
+    "target": "es2015",
+    "module": "commonjs",
+    "allowJs": false,
+    "checkJs": false,
+    "moduleResolution": "node",
+    "emitDecoratorMetadata": true,
+    "experimentalDecorators": true,
+    "sourceMap": true,
+    "declaration": true
+  },
+  "exclude": [
+    "node_modules",
+    "build",
+  ]
 }
