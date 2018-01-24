@@ -1,4 +1,5 @@
-# class-sanitizer
+# class-sanitizer [![Build Status](https://travis-ci.org/hollowverse/class-sanitizer.svg?branch=master)](https://travis-ci.org/hollowverse/class-sanitizer)
+
 
 Allows to use decorator and non-decorator based sanitization in your Typescript classes.
 Internally uses [validator.js][1] to make sanitization.
