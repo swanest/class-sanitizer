@@ -5,7 +5,7 @@ Allows to use decorator and non-decorator based sanitization in your Typescript 
 Internally uses [validator.js][1] to make sanitization.
 
 ## Installation
-`npm install `@hollowverse/class-sanitizer` --save`
+`npm install @hollowverse/class-sanitizer --save`
 
 ## Usage
 
