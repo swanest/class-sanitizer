@@ -158,6 +158,14 @@ export class Sanitizer {
     return validator.whitelist(str, chars as string);
   }
 
+  toUpperCase(str: string): string {
+    return str.toUpperCase();
+  }
+
+  toLowerCase(str: string): string {
+    return str.toLowerCase();
+  }
+
   // -------------------------------------------------------------------------
   // Private Methods
   // -------------------------------------------------------------------------
@@ -190,6 +198,10 @@ export class Sanitizer {
         return this.trim(value, metadata.value1);
       case SanitizeTypes.WHITELIST:
         return this.whitelist(value, metadata.value1);
+      case SanitizeTypes.TO_LOWER_CASE:
+        return this.toLowerCase(value);
+      case SanitizeTypes.TO_UPPER_CASE:
+        return this.toUpperCase(value);
       case SanitizeTypes.NESTED:
         if (Array.isArray(value)) {
           value.forEach(obj => {

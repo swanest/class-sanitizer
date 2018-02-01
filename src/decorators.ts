@@ -304,6 +304,34 @@ export function Whitelist(
   };
 }
 
+export function ToLowerCase(annotationOptions?: SanitizationOptions) {
+  return (object: object, propertyName: string) => {
+    defaultMetadataStorage.addSanitizationMetadata({
+      type: SanitizeTypes.TO_LOWER_CASE,
+      object,
+      propertyName,
+      each:
+        annotationOptions && annotationOptions.each
+          ? annotationOptions.each
+          : undefined,
+    });
+  };
+}
+
+export function ToUpperCase(annotationOptions?: SanitizationOptions) {
+  return (object: object, propertyName: string) => {
+    defaultMetadataStorage.addSanitizationMetadata({
+      type: SanitizeTypes.TO_UPPER_CASE,
+      object,
+      propertyName,
+      each:
+        annotationOptions && annotationOptions.each
+          ? annotationOptions.each
+          : undefined,
+    });
+  };
+}
+
 /**
  * Indicates if nested object should be sanitized as well.
  */

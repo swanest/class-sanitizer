@@ -17,6 +17,8 @@ describe('Sanitizer', () => {
       ToInt,
       ToBoolean,
       NormalizeEmail,
+      ToLowerCase,
+      ToUpperCase,
       sanitize,
     } = await import('../src/index');
 
@@ -30,6 +32,10 @@ describe('Sanitizer', () => {
       @ToInt() age: any;
 
       @ToBoolean() isPremium: any;
+
+      @ToLowerCase() color1: string;
+
+      @ToUpperCase() color2: string;
     }
 
     const a = new A();
@@ -38,6 +44,8 @@ describe('Sanitizer', () => {
     a.email = 'EXAMPLE+work@gmail.com';
     a.age = '18';
     a.isPremium = '1';
+    a.color1 = '#fFf';
+    a.color2 = '#FfF';
 
     sanitize(a);
 
@@ -48,6 +56,8 @@ describe('Sanitizer', () => {
     expect(a.age).toBe(18);
     expect(a.isPremium).toBeBoolean();
     expect(a.isPremium).toBe(true);
+    expect(a.color1).toMatch('#fff');
+    expect(a.color2).toMatch('#FFF');
   });
 
   test('Nested objects', async () => {
