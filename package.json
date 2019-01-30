@@ -1,6 +1,6 @@
 {
   "name": "sw-class-sanitizer",
-  "version": "0.0.6",
+  "version": "0.1.0",
   "description": "Class-based sanitation in Typescript using decorators",
   "private": false,
   "license": "Apache-2.0",
