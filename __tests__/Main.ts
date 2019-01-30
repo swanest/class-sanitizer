@@ -1,3 +1,6 @@
+import 'jest-extended';
+import { SanitizerInterface } from '../src';
+
 describe('Sanitizer', () => {
     beforeEach(() => {
         // Because `class-sanitizer` stores metadata of all annotated classes in a

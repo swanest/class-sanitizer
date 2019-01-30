@@ -1,5 +1,5 @@
 /**
- * Sanitation types.
+ * Sanitization types
  */
 export enum SanitizeTypes {
     BLACKLIST = 1,
@@ -15,6 +15,8 @@ export enum SanitizeTypes {
     TO_STRING = 11,
     TRIM = 12,
     WHITELIST = 13,
+    TO_LOWER_CASE = 14,
+    TO_UPPER_CASE = 15,
     CUSTOM_SANITIZATION = 9999,
-    NESTED = 1000
+    NESTED = 1000,
 }

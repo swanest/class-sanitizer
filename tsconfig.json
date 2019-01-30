@@ -1,20 +1,28 @@
 {
-    "version": "1.8.0",
-    "compilerOptions": {
-        "outDir": "build/compiled",
-        "target": "es5",
-        "module": "commonjs",
-        "moduleResolution": "node",
-        "emitDecoratorMetadata": true,
-        "experimentalDecorators": true,
-        "sourceMap": true,
-        "noImplicitAny": true,
-        "declaration": true
-    },
-    "exclude": [
-        "build",
-        "node_modules",
-        "typings/browser.d.ts",
-        "typings/browser"
-    ]
+  "version": "3.2.4",
+  "compilerOptions": {
+    "allowJs": false,
+    "module": "commonjs",
+    "moduleResolution": "node",
+    "experimentalDecorators": true,
+    "emitDecoratorMetadata": true,
+    "noImplicitReturns": true,
+    "sourceMap": true,
+    "rootDir": "src",
+    "noImplicitAny": true,
+    "outDir": "build",
+    "target": "es6",
+    "lib": [
+      "es7",
+      "dom"
+    ],
+    "declaration": true
+  },
+  "include": [
+    "src/**/*.ts"
+  ],
+  "exclude": [
+    "node_modules",
+    "build"
+  ]
 }

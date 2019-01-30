@@ -2,6 +2,7 @@
   "name": "sw-class-sanitizer",
   "version": "0.0.6",
   "description": "Class-based sanitation in Typescript using decorators",
+  "private": false,
   "license": "Apache-2.0",
   "readmeFilename": "README.md",
   "author": {
@@ -21,7 +22,7 @@
   },
   "tags": [
     "sanitizer",
-    "sanitation",
+    "sanitization",
     "typescript",
     "typescript-sanitizer"
   ],

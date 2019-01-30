@@ -1,0 +1,6 @@
+src
+__tests__
+tslint.json
+tsconfig.json
+.travis.yml
+.gitignore
