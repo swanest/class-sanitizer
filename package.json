@@ -9,6 +9,8 @@
     "name": "Umed Khudoiberdiev",
     "email": "pleerock.me@gmail.com"
   },
+  "main": "build/index.js",
+  "types": "build/index.d.ts",
   "contributors": [
     "Muhammad Fawwaz Orabi <mfawwaz93@gmail.com>",
     "Youri Tolstoy <youri@swanest.com>"
