@@ -3,7 +3,6 @@ import { defaultMetadataStorage } from './metadata/MetadataStorage';
 import { SanitizationMetadata } from './metadata/SanitizationMetadata';
 import { SanitizerInterface } from './SanitizerInterface';
 import { SanitizeTypes } from './SanitizeTypes';
-import NormalizeEmailOptions = ValidatorJS.NormalizeEmailOptions;
 
 /**
  * Sanitizer performs sanitization of the given object based on its metadata.
@@ -240,4 +239,18 @@ export class Sanitizer {
                 );
         }
     }
+}
+
+export interface NormalizeEmailOptions {
+    all_lowercase?: boolean;
+    gmail_lowercase?: boolean;
+    gmail_remove_dots?: boolean;
+    gmail_remove_subaddress?: boolean;
+    gmail_convert_googlemaildotcom?: boolean;
+    outlookdotcom_lowercase?: boolean;
+    outlookdotcom_remove_subaddress?: boolean;
+    yahoo_lowercase?: boolean;
+    yahoo_remove_subaddress?: boolean;
+    icloud_lowercase?: boolean;
+    icloud_remove_subaddress?: boolean;
 }
