@@ -1,13 +1,17 @@
 {
-  "name": "class-sanitizer",
-  "private": true,
-  "version": "0.0.5",
+  "name": "sw-class-sanitizer",
+  "version": "0.0.6",
   "description": "Class-based sanitation in Typescript using decorators",
   "license": "Apache-2.0",
   "readmeFilename": "README.md",
   "author": {
-    "name": "Swanest"
+    "name": "Umed Khudoiberdiev",
+    "email": "pleerock.me@gmail.com"
   },
+  "contributors": [
+    "Muhammad Fawwaz Orabi <mfawwaz93@gmail.com>",
+    "Youri Tolstoy <youri@swanest.com>"
+  ],
   "repository": {
     "type": "git",
     "url": "https://github.com/swanest/class-sanitizer.git"
@@ -22,36 +26,37 @@
     "typescript-sanitizer"
   ],
   "dependencies": {
-    "validator": "^5.1.0"
+    "jest": "^23.0.0",
+    "validator": "^10.11.0"
   },
   "devDependencies": {
-    "@types/assertion-error": "^1.0.30",
-    "@types/chai": "^3.4.35",
-    "@types/chai-as-promised": "^0.0.29",
-    "@types/es6-shim": "^0.31.32",
-    "@types/gulp": "^3.8.32",
-    "@types/mocha": "^2.2.0",
-    "@types/node": "^7.0.5",
-    "@types/sinon": "^1.16.35",
-    "@types/validator": "^5.1.0",
-    "chai": "^3.4.1",
-    "chai-as-promised": "^5.2.0",
-    "del": "^2.0.2",
-    "gulp": "^3.9.1",
-    "gulp-mocha": "^2.2.0",
-    "gulp-replace": "^0.5.4",
-    "gulp-shell": "^0.5.0",
-    "gulp-tslint": "^4.3.3",
-    "gulpclass": "0.1.0",
-    "mocha": "^2.3.4",
-    "sinon": "^1.17.2",
-    "sinon-chai": "^2.8.0",
-    "ts-node": "^2.1.0",
-    "tslint": "^3.5.0",
-    "tslint-stylish": "^2.1.0-beta",
-    "typescript": "^2.2.1"
+    "@types/jest": "^23.3.13",
+    "@types/node": "^8.10.39",
+    "@types/validator": "^10.9.0",
+    "jest-extended": "^0.11.1",
+    "ts-jest": "^23.10.5",
+    "ts-node": "^8.0.2",
+    "tslint": "^5.12.1",
+    "typescript": "^3.2.4"
   },
   "scripts": {
-    "test": "./node_modules/.bin/gulp tests"
+    "build": "rm -rf ./build && tsc",
+    "lint": "tslint -t prose -c tslint.json -p tsconfig.json",
+    "test": "jest"
+  },
+  "jest": {
+    "transform": {
+      "^.+\\.tsx?$": "ts-jest"
+    },
+    "testRegex": "(/__tests__/.*|(\\.|/)(test|spec))\\.(jsx?|tsx?)$",
+    "moduleFileExtensions": [
+      "ts",
+      "tsx",
+      "js",
+      "jsx",
+      "json",
+      "node"
+    ],
+    "setupTestFrameworkScriptFile": "jest-extended"
   }
 }
